@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paraíso dos Carpetes | Cortinas Sob Medida, Persianas e Decoração em Votuporanga - SP</title>
+    <meta name="description" content="Quase 40 anos de tradição em Votuporanga - SP. Cortinas sob medida em gaze de linho, persianas rolô, romana, automatizadas e carpetes com medição gratuita.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Cormorant Garamond (Editorial/Elegante) & Plus Jakarta Sans (Moderna/Legível) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Configuração Customizada Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sand: '#FAF8F5',       /* Off-white / Areia */
+                        beige: '#E8E0D5',      /* Bege quente */
+                        espresso: '#2C241E',   /* Marrom escuro / Café */
+                        terracotta: '#A67C52', /* Dourado / Terracota suave */
+                        terracottaDark: '#8C6540',
+                        cream: '#F3EFEA'
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px -10px rgba(44, 36, 30, 0.08)',
+                        'card': '0 4px 20px -2px rgba(44, 36, 30, 0.05)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Estilos auxiliares suaves */
+        body {
+            background-color: #FAF8F5;
+            color: #2C241E;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .font-editorial {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+        }
+
+        /* Animação suave para cards filtrados */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(14px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-up {
+            animation: fadeUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        /* Estilo customizado para barra de rolagem */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAF8F5;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D5C8B8;
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #A67C52;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-terracotta selection:text-white">
+
+    <!-- =====================================================================
+         1. HEADER FIXO COM LOGO TIPOGRÁFICO E NAVEGAÇÃO
+    ====================================================================== -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-sand/90 backdrop-blur-md border-b border-beige/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20 md:h-24">
+                
+                <!-- Logo Tipográfico -->
+                <a href="#inicio" class="group flex flex-col focus:outline-none">
+                    <span class="font-editorial text-2xl sm:text-3xl font-bold tracking-tight text-espresso leading-none group-hover:text-terracotta transition-colors">
+                        Paraíso dos Carpetes
+                    </span>
+                    <span class="text-[10px] sm:text-xs uppercase tracking-[0.22em] text-terracotta font-semibold mt-1">
+                        Cortinas • Persianas • Decoração
+                    </span>
+                </a>
+
+                <!-- Links Desktop -->
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="#inicio" class="text-sm font-medium text-espresso/80 hover:text-terracotta transition-colors">Início</a>
+                    <a href="#catalogo" class="text-sm font-medium text-espresso/80 hover:text-terracotta transition-colors">Catálogo</a>
+                    <a href="#como-funciona" class="text-sm font-medium text-espresso/80 hover:text-terracotta transition-colors">Como Funciona</a>
+                    <a href="#sobre" class="text-sm font-medium text-espresso/80 hover:text-terracotta transition-colors">Sobre Nós</a>
+                    <a href="#contato" class="text-sm font-medium text-espresso/80 hover:text-terracotta transition-colors">Contato</a>
+                </nav>
+
+                <!-- Botões CTA Desktop & Mobile Toggle -->
+                <div class="flex items-center gap-3">
+                    <a href="https://wa.me/551734215619?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20visita%20ou%20solicitar%20um%20or%C3%A7amento%20de%20cortinas%20sob%20medida." 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="hidden sm:inline-flex items-center gap-2 bg-espresso hover:bg-terracotta text-sand text-sm font-medium px-5 py-2.5 rounded-full transition-all duration-300 shadow-sm hover:shadow">
+                        <i data-lucide="message-circle" class="w-4 h-4 text-terracotta group-hover:text-white"></i>
+                        <span>Falar no WhatsApp</span>
+                    </a>
+
+                    <!-- Botão Menu Mobile -->
+                    <button id="mobile-menu-btn" aria-label="Abrir Menu" class="lg:hidden p-2.5 rounded-xl text-espresso hover:bg-beige/60 transition-colors">
+                        <i data-lucide="menu" id="menu-icon" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Mobile Expansível -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-sand border-b border-beige px-4 pt-2 pb-6 space-y-2 shadow-lg">
+            <a href="#inicio" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-espresso hover:bg-beige/50">Início</a>
+            <a href="#catalogo" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-espresso hover:bg-beige/50">Catálogo</a>
+            <a href="#simulador" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-espresso hover:bg-beige/50">Simular Orçamento</a>
+            <a href="#como-funciona" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-espresso hover:bg-beige/50">Como Funciona</a>
+            <a href="#sobre" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-espresso hover:bg-beige/50">Sobre Nós</a>
+            <a href="#contato" class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-espresso hover:bg-beige/50">Contato</a>
+            <div class="pt-2">
+                <a href="https://wa.me/551734215619?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Para%C3%ADso%20dos%20Carpetes%20e%20gostaria%20de%20um%20or%C3%A7amento." 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="flex items-center justify-center gap-2 w-full bg-terracotta text-white font-medium py-3.5 rounded-full shadow-sm">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                    <span>Atendimento via WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- =====================================================================
+         2. HERO SECTION IMPACTANTE
+    ====================================================================== -->
+    <section id="inicio" class="pt-28 pb-16 md:pt-36 md:pb-24 lg:pt-40 lg:pb-28 bg-gradient-to-b from-cream/70 to-sand overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                
+                <!-- Coluna de Texto -->
+                <div class="lg:col-span-6 space-y-6 text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-beige/70 border border-terracotta/20 text-espresso text-xs sm:text-sm font-medium">
+                        <span class="w-2 h-2 rounded-full bg-terracotta animate-pulse"></span>
+                        <span>Quase 40 anos de tradição em Votuporanga e região</span>
+                    </div>
+
+                    <h1 class="font-editorial text-4xl sm:text-5xl lg:text-6xl font-bold text-espresso leading-[1.12] tracking-tight">
+                        Transforme seus ambientes com <span class="italic font-semibold text-terracotta">cortinas e persianas</span> sob medida
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-espresso/80 leading-relaxed max-w-xl">
+                        Unimos tecidos nobres, caimento impecável e consultoria especializada para levar aconchego, controle térmico e sofisticação exclusiva para a sua casa ou escritório.
+                    </p>
+
+                    <!-- Botões CTA -->
+                    <div class="flex flex-col sm:flex-row gap-3.5 pt-2">
+                        <a href="#simulador" class="inline-flex items-center justify-center gap-2 bg-espresso hover:bg-terracotta text-sand font-medium px-7 py-4 rounded-full transition-all duration-300 shadow-soft text-center">
+                            <i data-lucide="calculator" class="w-4 h-4"></i>
+                            <span>Simular Orçamento</span>
+                        </a>
+                        <a href="#catalogo" class="inline-flex items-center justify-center gap-2 bg-transparent hover:bg-beige/60 text-espresso border border-espresso/25 font-medium px-7 py-4 rounded-full transition-all duration-300 text-center">
+                            <span>Ver Catálogo</span>
+                            <i data-lucide="arrow-down-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+
+                    <!-- Selos de Confiança -->
+                    <div class="grid grid-cols-3 gap-4 pt-6 border-t border-beige">
+                        <div>
+                            <p class="font-editorial text-2xl sm:text-3xl font-bold text-espresso">+39 Anos</p>
+                            <p class="text-xs text-espresso/70 mt-0.5">De história e confiança</p>
+                        </div>
+                        <div>
+                            <p class="font-editorial text-2xl sm:text-3xl font-bold text-espresso">100%</p>
+                            <p class="text-xs text-espresso/70 mt-0.5">Confecção sob medida</p>
+                        </div>
+                        <div>
+                            <p class="font-editorial text-2xl sm:text-3xl font-bold text-espresso">Gratuita</p>
+                            <p class="text-xs text-espresso/70 mt-0.5">Visita e medição técnica</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna de Imagem -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/4.3] sm:aspect-[16/11] lg:aspect-[4/4.4] bg-beige">
+                        <img 
+                            src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=85" 
+                            alt="Sala de estar elegante decorada com cortinas de linho claro do teto ao piso" 
+                            class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700"
+                            onerror="this.src='https://placehold.co/800x900/E8E0D5/2C241E?text=Para%C3%ADso+dos+Carpetes'"
+                        >
+                        <!-- Gradiente sutil na base -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-espresso/40 via-transparent to-transparent"></div>
+                        
+                        <!-- Card Flutuante sobre a imagem -->
+                        <div class="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-auto bg-sand/95 backdrop-blur-md p-4 rounded-2xl shadow-lg border border-beige max-w-xs">
+                            <div class="flex items-start gap-3">
+                                <div class="p-2.5 rounded-xl bg-terracotta/15 text-terracotta shrink-0">
+                                    <i data-lucide="sparkles" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-semibold uppercase tracking-wider text-terracotta">Acabamento Premium</p>
+                                    <p class="text-sm font-medium text-espresso mt-0.5">Gaze de linho, prega wave e trilhos suíços silenciosos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Elemento Decorativo de Fundo -->
+                    <div class="hidden sm:block -z-10 absolute -bottom-6 -right-6 w-48 h-48 rounded-full bg-terracotta/15 blur-2xl"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         3. CATÁLOGO INTERATIVO COM FILTROS
+    ====================================================================== -->
+    <section id="catalogo" class="py-20 md:py-28 bg-sand">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Cabeçalho da Seção -->
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <span class="text-xs uppercase tracking-[0.22em] text-terracotta font-semibold">Coleção Exclusiva</span>
+                <h2 class="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-espresso">
+                    Soluções sob medida para cada estilo de ambiente
+                </h2>
+                <p class="text-espresso/75 text-base sm:text-lg">
+                    Explore nossa linha de cortinas, persianas, sistemas motorizados e carpetes. Selecione um modelo para preencher automaticamente sua simulação de orçamento.
+                </p>
+            </div>
+
+            <!-- Botões de Filtro -->
+            <div id="filter-container" class="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 mt-10 mb-12">
+                <button data-filter="todas" class="filter-btn active px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 bg-espresso text-sand shadow-sm">
+                    Todas
+                </button>
+                <button data-filter="cortinas" class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 bg-cream text-espresso hover:bg-beige border border-beige">
+                    Cortinas de Tecido
+                </button>
+                <button data-filter="persianas" class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 bg-cream text-espresso hover:bg-beige border border-beige">
+                    Persianas
+                </button>
+                <button data-filter="motorizadas" class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 bg-cream text-espresso hover:bg-beige border border-beige">
+                    Motorizadas
+                </button>
+                <button data-filter="carpetes" class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 bg-cream text-espresso hover:bg-beige border border-beige">
+                    Carpetes & Tapetes
+                </button>
+            </div>
+
+            <!-- Grid de Produtos (Renderizado via JS) -->
+            <div id="catalog-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Cards inseridos dinamicamente -->
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         4. SIMULADOR DE ORÇAMENTO RÁPIDO (MVP FUNCIONAL)
+    ====================================================================== -->
+    <section id="simulador" class="py-20 md:py-28 bg-beige/45 border-y border-beige">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-sand rounded-3xl shadow-soft border border-beige overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-12">
+                    
+                    <!-- Coluna Esquerda: Informações e Benefícios -->
+                    <div class="lg:col-span-5 bg-espresso text-sand p-8 sm:p-10 lg:p-12 flex flex-col justify-between relative overflow-hidden">
+                        <div class="relative z-10 space-y-6">
+                            <span class="inline-block text-xs uppercase tracking-[0.2em] text-terracotta font-semibold">
+                                Atendimento Personalizado
+                            </span>
+                            <h2 class="font-editorial text-3xl sm:text-4xl font-bold leading-tight">
+                                Simulador de Orçamento Rápido
+                            </h2>
+                            <p class="text-sand/80 text-sm sm:text-base leading-relaxed">
+                                Informe as medidas aproximadas do seu vão ou janela e o modelo desejado. Nossa equipe técnica preparará uma proposta sob medida e agendará sua medição gratuita em Votuporanga e região.
+                            </p>
+
+                            <ul class="space-y-4 pt-4 border-t border-sand/15 text-sm">
+                                <li class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-terracotta/20 text-terracotta flex items-center justify-center shrink-0">
+                                        <i data-lucide="ruler" class="w-4 h-4"></i>
+                                    </div>
+                                    <span>Medição técnica no local sem compromisso</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-terracotta/20 text-terracotta flex items-center justify-center shrink-0">
+                                        <i data-lucide="layers" class="w-4 h-4"></i>
+                                    </div>
+                                    <span>Mostruário completo de tecidos levado até você</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-full bg-terracotta/20 text-terracotta flex items-center justify-center shrink-0">
+                                        <i data-lucide="shield-check" class="w-4 h-4"></i>
+                                    </div>
+                                    <span>Garantia de instalação e acabamento próprio</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="relative z-10 mt-10 pt-6 border-t border-sand/15">
+                            <p class="text-xs text-sand/60">Prefere falar diretamente por telefone?</p>
+                            <p class="text-base font-semibold text-terracotta mt-1">(17) 3421-5619 • (17) 3423-5822</p>
+                        </div>
+
+                        <!-- Detalhe visual sutil -->
+                        <div class="absolute -bottom-20 -right-20 w-64 h-64 rounded-full bg-terracotta/10 pointer-events-none"></div>
+                    </div>
+
+                    <!-- Coluna Direita: Formulário Interativo -->
+                    <div class="lg:col-span-7 p-8 sm:p-10 lg:p-12">
+                        <form id="quote-form" class="space-y-6">
+                            
+                            <!-- Feedback de seleção automática do catálogo -->
+                            <div id="prefill-banner" class="hidden items-center justify-between bg-terracotta/10 border border-terracotta/30 text-espresso px-4 py-3 rounded-2xl text-sm">
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="check-circle-2" class="w-4 h-4 text-terracotta shrink-0"></i>
+                                    <span>Modelo selecionado: <strong id="prefill-name"></strong></span>
+                                </div>
+                                <button type="button" id="clear-prefill" class="text-xs underline text-terracotta hover:text-espresso">Limpar</button>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <!-- Tipo de Produto -->
+                                <div>
+                                    <label for="produto" class="block text-xs font-semibold uppercase tracking-wider text-espresso/80 mb-2">
+                                        Tipo de Produto *
+                                    </label>
+                                    <select id="produto" required class="w-full rounded-xl bg-cream border border-beige px-4 py-3.5 text-sm text-espresso focus:outline-none focus:border-terracotta focus:ring-2 focus:ring-terracotta/20 transition-all">
+                                        <option value="Cortina Gaze de Linho com Forro">Cortina Gaze de Linho com Forro</option>
+                                        <option value="Cortina Wave Sob Medida">Cortina Wave Sob Medida</option>
+                                        <option value="Persiana Rolô Tela Solar">Persiana Rolô Tela Solar</option>
+                                        <option value="Persiana Romana">Persiana Romana</option>
+                                        <option value="Cortina ou Persiana Motorizada">Cortina ou Persiana Motorizada</option>
+                                        <option value="Carpete Residencial / Corporativo">Carpete Residencial / Corporativo</option>
+                                    </select>
+                                </div>
+
+                                <!-- Ambiente -->
+                                <div>
+                                    <label for="ambiente" class="block text-xs font-semibold uppercase tracking-wider text-espresso/80 mb-2">
+                                        Ambiente *
+                                    </label>
+                                    <select id="ambiente" required class="w-full rounded-xl bg-cream border border-beige px-4 py-3.5 text-sm text-espresso focus:outline-none focus:border-terracotta focus:ring-2 focus:ring-terracotta/20 transition-all">
+                                        <option value="Sala de Estar / TV">Sala de Estar / TV</option>
+                                        <option value="Quarto / Suíte">Quarto / Suíte</option>
+                                        <option value="Varanda Gourmet">Varanda Gourmet</option>
+                                        <option value="Escritório / Corporativo">Escritório / Corporativo</option>
+                                        <option value="Outro Ambiente">Outro Ambiente</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Dimensões -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label for="largura" class="block text-xs font-semibold uppercase tracking-wider text-espresso/80 mb-2">
+                                        Largura Aproximada (metros) *
+                                    </label>
+                                    <div class="relative">
+                                        <input type="number" id="largura" step="0.10" min="0.5" max="20" placeholder="Ex: 3.20" required
+                                               class="w-full rounded-xl bg-cream border border-beige px-4 py-3.5 pr-12 text-sm text-espresso placeholder:text-espresso/40 focus:outline-none focus:border-terracotta focus:ring-2 focus:ring-terracotta/20 transition-all">
+                                        <span class="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-medium text-espresso/50">m</span>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="altura" class="block text-xs font-semibold uppercase tracking-wider text-espresso/80 mb-2">
+                                        Altura Aproximada (metros) *
+                                    </label>
+                                    <div class="relative">
+                                        <input type="number" id="altura" step="0.10" min="0.5" max="10" placeholder="Ex: 2.60" required
+                                               class="w-full rounded-xl bg-cream border border-beige px-4 py-3.5 pr-12 text-sm text-espresso placeholder:text-espresso/40 focus:outline-none focus:border-terracotta focus:ring-2 focus:ring-terracotta/20 transition-all">
+                                        <span class="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-medium text-espresso/50">m</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Nome / Cidade (Opcional) -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label for="cliente-nome" class="block text-xs font-semibold uppercase tracking-wider text-espresso/80 mb-2">
+                                        Seu Nome
+                                    </label>
+                                    <input type="text" id="cliente-nome" placeholder="Como podemos te chamar?"
+                                           class="w-full rounded-xl bg-cream border border-beige px-4 py-3.5 text-sm text-espresso placeholder:text-espresso/40 focus:outline-none focus:border-terracotta focus:ring-2 focus:ring-terracotta/20 transition-all">
+                                </div>
+                                <div>
+                                    <label for="cliente-cidade" class="block text-xs font-semibold uppercase tracking-wider text-espresso/80 mb-2">
+                                        Cidade / Bairro
+                                    </label>
+                                    <input type="text" id="cliente-cidade" value="Votuporanga - SP"
+                                           class="w-full rounded-xl bg-cream border border-beige px-4 py-3.5 text-sm text-espresso focus:outline-none focus:border-terracotta focus:ring-2 focus:ring-terracotta/20 transition-all">
+                                </div>
+                            </div>
+
+                            <!-- Resumo Dinâmico da Simulação -->
+                            <div id="simulation-preview" class="bg-cream/90 border border-beige rounded-2xl p-4 sm:p-5 space-y-2">
+                                <div class="flex items-center justify-between text-xs uppercase tracking-wider text-terracotta font-semibold">
+                                    <span>Resumo da Solicitação</span>
+                                    <span id="area-badge" class="bg-beige px-2.5 py-0.5 rounded-full text-espresso">Área estimada: -- m²</span>
+                                </div>
+                                <p id="summary-text" class="text-sm text-espresso/85 leading-relaxed">
+                                    Preencha as dimensões acima para calcular a área aproximada e gerar sua solicitação personalizada.
+                                </p>
+                            </div>
+
+                            <!-- Botões de Ação -->
+                            <div class="flex flex-col sm:flex-row gap-3 pt-2">
+                                <button type="submit" class="flex-1 inline-flex items-center justify-center gap-2.5 bg-terracotta hover:bg-terracottaDark text-white font-semibold px-6 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-lg">
+                                    <i data-lucide="send" class="w-4 h-4"></i>
+                                    <span>Enviar Solicitação via WhatsApp</span>
+                                </button>
+                                <button type="button" id="btn-estimativa" class="inline-flex items-center justify-center gap-2 bg-cream hover:bg-beige text-espresso border border-beige font-medium px-5 py-4 rounded-full transition-all duration-300 text-sm">
+                                    <i data-lucide="file-text" class="w-4 h-4 text-terracotta"></i>
+                                    <span>Ver Prévia</span>
+                                </button>
+                            </div>
+
+                            <!-- Box de Resposta / Confirmação na Tela (Sem alert()) -->
+                            <div id="quote-feedback" class="hidden rounded-2xl bg-espresso text-sand p-5 space-y-3 animate-fade-up">
+                                <div class="flex items-start justify-between gap-4">
+                                    <div class="flex items-center gap-2.5">
+                                        <i data-lucide="sparkles" class="w-5 h-5 text-terracotta shrink-0"></i>
+                                        <h4 class="font-semibold text-base">Prévia do Atendimento Personalizado</h4>
+                                    </div>
+                                    <button type="button" id="close-feedback" class="text-sand/60 hover:text-sand">
+                                        <i data-lucide="x" class="w-4 h-4"></i>
+                                    </button>
+                                </div>
+                                <p id="feedback-details" class="text-sm text-sand/85 leading-relaxed"></p>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         5. DIFERENCIAIS / COMO FUNCIONA (4 PASSOS)
+    ====================================================================== -->
+    <section id="como-funciona" class="py-20 md:py-28 bg-sand">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-xs uppercase tracking-[0.22em] text-terracotta font-semibold">Processo Completo</span>
+                <h2 class="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-espresso">
+                    Do projeto à instalação impecável
+                </h2>
+                <p class="text-espresso/75 text-base sm:text-lg">
+                    Cuidamos de cada etapa com precisão artesanal para que você não precise se preocupar com nada.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+                
+                <!-- Passo 1 -->
+                <div class="group bg-cream/70 hover:bg-white p-7 rounded-3xl border border-beige transition-all duration-300 shadow-card hover:shadow-soft">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-terracotta/15 text-terracotta flex items-center justify-center group-hover:bg-terracotta group-hover:text-white transition-colors">
+                            <i data-lucide="compass" class="w-6 h-6"></i>
+                        </div>
+                        <span class="font-editorial text-4xl font-bold text-beige group-hover:text-terracotta/40 transition-colors">01</span>
+                    </div>
+                    <h3 class="font-editorial text-2xl font-bold text-espresso mb-2.5">
+                        Visita Técnica e Medição Gratuita
+                    </h3>
+                    <p class="text-sm text-espresso/75 leading-relaxed">
+                        Vamos até o seu imóvel em Votuporanga e região para avaliar incidência solar, altura de pé-direito, cortineiros e medidas exatas.
+                    </p>
+                </div>
+
+                <!-- Passo 2 -->
+                <div class="group bg-cream/70 hover:bg-white p-7 rounded-3xl border border-beige transition-all duration-300 shadow-card hover:shadow-soft">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-terracotta/15 text-terracotta flex items-center justify-center group-hover:bg-terracotta group-hover:text-white transition-colors">
+                            <i data-lucide="palette" class="w-6 h-6"></i>
+                        </div>
+                        <span class="font-editorial text-4xl font-bold text-beige group-hover:text-terracotta/40 transition-colors">02</span>
+                    </div>
+                    <h3 class="font-editorial text-2xl font-bold text-espresso mb-2.5">
+                        Consultoria de Tecidos e Acabamentos
+                    </h3>
+                    <p class="text-sm text-espresso/75 leading-relaxed">
+                        Apresentamos catálogos físicos com gazes de linho, blackouts, telas solares e ferragens para harmonizar com a sua decoração.
+                    </p>
+                </div>
+
+                <!-- Passo 3 -->
+                <div class="group bg-cream/70 hover:bg-white p-7 rounded-3xl border border-beige transition-all duration-300 shadow-card hover:shadow-soft">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-terracotta/15 text-terracotta flex items-center justify-center group-hover:bg-terracotta group-hover:text-white transition-colors">
+                            <i data-lucide="scissors" class="w-6 h-6"></i>
+                        </div>
+                        <span class="font-editorial text-4xl font-bold text-beige group-hover:text-terracotta/40 transition-colors">03</span>
+                    </div>
+                    <h3 class="font-editorial text-2xl font-bold text-espresso mb-2.5">
+                        Confecção Própria Sob Medida
+                    </h3>
+                    <p class="text-sm text-espresso/75 leading-relaxed">
+                        Costura de alta precisão, pregas perfeitas (wave, macho, americana) e controle rigoroso de qualidade em cada peça produzida.
+                    </p>
+                </div>
+
+                <!-- Passo 4 -->
+                <div class="group bg-cream/70 hover:bg-white p-7 rounded-3xl border border-beige transition-all duration-300 shadow-card hover:shadow-soft">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-terracotta/15 text-terracotta flex items-center justify-center group-hover:bg-terracotta group-hover:text-white transition-colors">
+                            <i data-lucide="check-circle" class="w-6 h-6"></i>
+                        </div>
+                        <span class="font-editorial text-4xl font-bold text-beige group-hover:text-terracotta/40 transition-colors">04</span>
+                    </div>
+                    <h3 class="font-editorial text-2xl font-bold text-espresso mb-2.5">
+                        Instalação Especializada
+                    </h3>
+                    <p class="text-sm text-espresso/75 leading-relaxed">
+                        Equipe própria experiente realiza a fixação limpa, nivelamento e vaporização final para que sua cortina fique pronta para admirar.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         6. SOBRE A LOJA (TRADIÇÃO EM VOTUPORANGA)
+    ====================================================================== -->
+    <section id="sobre" class="py-20 md:py-28 bg-cream/80 border-t border-beige">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Composição Visual -->
+                <div class="lg:col-span-6">
+                    <div class="grid grid-cols-12 gap-4 items-center">
+                        <div class="col-span-7">
+                            <div class="rounded-3xl overflow-hidden shadow-lg border-4 border-white aspect-[3/4] bg-beige">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=900&q=85" 
+                                    alt="Detalhes de textura e caimento de cortina em ambiente acolhedor" 
+                                    class="w-full h-full object-cover"
+                                    onerror="this.src='https://placehold.co/600x800/E8E0D5/2C241E?text=Tradi%C3%A7%C3%A3o+e+Qualidade'"
+                                >
+                            </div>
+                        </div>
+                        <div class="col-span-5 space-y-4">
+                            <div class="bg-espresso text-sand p-6 rounded-3xl shadow-soft">
+                                <p class="font-editorial text-4xl sm:text-5xl font-bold text-terracotta">+39</p>
+                                <p class="text-sm font-medium mt-1">Anos decorando lares em Votuporanga</p>
+                            </div>
+                            <div class="rounded-3xl overflow-hidden shadow-lg border-4 border-white aspect-square bg-beige">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=700&q=85" 
+                                    alt="Ambiente corporativo e residencial moderno" 
+                                    class="w-full h-full object-cover"
+                                    onerror="this.src='https://placehold.co/500x500/E8E0D5/2C241E?text=Sob+Medida'"
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Texto Institucional -->
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-xs uppercase tracking-[0.22em] text-terracotta font-semibold">Nossa História</span>
+                    <h2 class="font-editorial text-3xl sm:text-4xl lg:text-5xl font-bold text-espresso leading-tight">
+                        Quase quatro décadas vestindo janelas e criando memórias
+                    </h2>
+                    <p class="text-espresso/80 text-base leading-relaxed">
+                        Há mais de 39 anos na tradicional <strong>Rua Pernambuco, 3721/3729, no Patrimônio Novo em Votuporanga - SP</strong>, a <strong>Paraíso dos Carpetes</strong> consolidou-se como referência regional em cortinas sob medida, persianas, carpetes e decoração de interiores.
+                    </p>
+                    <p class="text-espresso/80 text-base leading-relaxed">
+                        Acreditamos que cada janela conta uma história e merece uma solução pensada nos mínimos detalhes — desde o controle ideal de luminosidade e conforto acústico até o toque suave dos melhores tecidos do mercado. Nosso atendimento próximo e artesanal garante tranquilidade do primeiro contato à instalação final.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-3">
+                        <div class="flex items-start gap-3 bg-sand p-4 rounded-2xl border border-beige">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-terracotta shrink-0 mt-0.5"></i>
+                            <div>
+                                <p class="text-sm font-semibold text-espresso">Showroom Completo</p>
+                                <p class="text-xs text-espresso/70 mt-0.5">Rua Pernambuco, 3721/3729 - Votuporanga, SP</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 bg-sand p-4 rounded-2xl border border-beige">
+                            <i data-lucide="award" class="w-5 h-5 text-terracotta shrink-0 mt-0.5"></i>
+                            <div>
+                                <p class="text-sm font-semibold text-espresso">Excelência Comprovada</p>
+                                <p class="text-xs text-espresso/70 mt-0.5">Atendimento residencial, comercial e arquitetos</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <a href="https://www.instagram.com/paraisodoscarpetes/" target="_blank" rel="noopener noreferrer" 
+                           class="inline-flex items-center gap-2.5 text-sm font-semibold text-espresso hover:text-terracotta transition-colors">
+                            <i data-lucide="instagram" class="w-5 h-5 text-terracotta"></i>
+                            <span>Acompanhe nossos projetos recentes no Instagram (@paraisodoscarpetes)</span>
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================================
+         7. RODAPÉ COMPLETO E BOTÃO FLUTUANTE DO WHATSAPP
+    ====================================================================== -->
+    <footer id="contato" class="bg-espresso text-sand pt-16 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-sand/15">
+                
+                <!-- Coluna 1: Marca -->
+                <div class="space-y-4">
+                    <div>
+                        <span class="font-editorial text-2xl sm:text-3xl font-bold text-sand block">Paraíso dos Carpetes</span>
+                        <span class="text-[11px] uppercase tracking-[0.2em] text-terracotta font-semibold">Cortinas • Persianas • Decoração</span>
+                    </div>
+                    <p class="text-sm text-sand/75 leading-relaxed">
+                        Mais de 39 anos transformando ambientes em Votuporanga e região com cortinas sob medida, persianas modernas, automatização e carpetes.
+                    </p>
+                    <div class="pt-2">
+                        <a href="https://www.instagram.com/paraisodoscarpetes/" target="_blank" rel="noopener noreferrer" 
+                           aria-label="Instagram Paraíso dos Carpetes"
+                           class="inline-flex items-center gap-2 bg-sand/10 hover:bg-terracotta text-sand px-4 py-2 rounded-full text-xs font-medium transition-colors">
+                            <i data-lucide="instagram" class="w-4 h-4"></i>
+                            <span>@paraisodoscarpetes</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Endereço -->
+                <div class="space-y-4">
+                    <h4 class="text-xs uppercase tracking-[0.2em] text-terracotta font-semibold">Endereço da Loja</h4>
+                    <div class="flex items-start gap-3 text-sm text-sand/80">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-terracotta shrink-0 mt-0.5"></i>
+                        <div>
+                            <p class="font-medium text-sand">Rua Pernambuco, 3721 / 3729</p>
+                            <p>Patrimônio Novo</p>
+                            <p>Votuporanga - SP</p>
+                        </div>
+                    </div>
+                    <a href="https://maps.google.com/?q=Rua+Pernambuco+3721+Votuporanga+SP" target="_blank" rel="noopener noreferrer"
+                       class="inline-flex items-center gap-1.5 text-xs text-terracotta hover:underline">
+                        <span>Abrir no Google Maps</span>
+                        <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+
+                <!-- Coluna 3: Contatos -->
+                <div class="space-y-4">
+                    <h4 class="text-xs uppercase tracking-[0.2em] text-terracotta font-semibold">Telefones & WhatsApp</h4>
+                    <ul class="space-y-3 text-sm text-sand/80">
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="phone" class="w-4 h-4 text-terracotta shrink-0"></i>
+                            <a href="tel:+551734215619" class="hover:text-terracotta transition-colors">(17) 3421-5619</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="phone" class="w-4 h-4 text-terracotta shrink-0"></i>
+                            <a href="tel:+551734235822" class="hover:text-terracotta transition-colors">(17) 3423-5822</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="message-circle" class="w-4 h-4 text-terracotta shrink-0"></i>
+                            <a href="https://wa.me/551734215619" target="_blank" rel="noopener noreferrer" class="hover:text-terracotta transition-colors">
+                                Atendimento via WhatsApp
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 4: Horário de Atendimento -->
+                <div class="space-y-4">
+                    <h4 class="text-xs uppercase tracking-[0.2em] text-terracotta font-semibold">Horário de Atendimento</h4>
+                    <div class="flex items-start gap-3 text-sm text-sand/80">
+                        <i data-lucide="clock" class="w-5 h-5 text-terracotta shrink-0 mt-0.5"></i>
+                        <div class="space-y-1">
+                            <p><strong class="text-sand">Segunda a Sexta:</strong><br>08h00 às 18h00</p>
+                            <p class="pt-1"><strong class="text-sand">Sábado:</strong><br>08h00 às 12h00</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-sand/55">
+                <p>&copy; <span id="current-year"></span> Paraíso dos Carpetes — Todos os direitos reservados.</p>
+                <p>Votuporanga - SP • Cortinas Sob Medida, Persianas e Decoração</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/551734215619?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20Para%C3%ADso%20dos%20Carpetes." 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Falar pelo WhatsApp"
+       class="fixed bottom-5 right-5 sm:bottom-7 sm:right-7 z-40 group flex items-center gap-2.5 bg-[#25D366] hover:bg-[#1ebe5d] text-white px-4 py-3.5 sm:px-5 sm:py-3.5 rounded-full shadow-xl transition-all duration-300 hover:scale-105">
+        <i data-lucide="message-circle" class="w-6 h-6 fill-current"></i>
+        <span class="hidden sm:inline text-sm font-semibold pr-1">Orçamento WhatsApp</span>
+    </a>
+
+    <!-- =====================================================================
+         JAVASCRIPT INTERATIVO (CATÁLOGO, SIMULADOR E NAVEGAÇÃO)
+    ====================================================================== -->
+    <script>
+        // Dados do Catálogo de Produtos
+        const products = [
+            {
+                id: 1,
+                name: "Cortina Gaze de Linho com Forro",
+                category: "cortinas",
+                categoryLabel: "Cortinas de Tecido",
+                selectValue: "Cortina Gaze de Linho com Forro",
+                description: "Leveza natural e luminosidade suave com textura sofisticada de linho e forro microfibra ou blackout opcional.",
+                features: ["Caimento fluido do teto ao piso", "Forro que protege contra raios UV"],
+                image: "https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                id: 2,
+                name: "Cortina Wave Sob Medida",
+                category: "cortinas",
+                categoryLabel: "Cortinas de Tecido",
+                selectValue: "Cortina Wave Sob Medida",
+                description: "Ondas contínuas e simétricas em trilho suíço discreto, ideal para salas modernas e ambientes integrados.",
+                features: ["Deslizamento silencioso", "Ondulação uniforme e elegante"],
+                image: "https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                id: 3,
+                name: "Persiana Rolô Tela Solar",
+                category: "persianas",
+                categoryLabel: "Persianas",
+                selectValue: "Persiana Rolô Tela Solar",
+                description: "Controle térmico eficiente sem perder a visibilidade externa. Perfeita para varandas gourmet, salas e escritórios.",
+                features: ["Filtra até 95% dos raios UV", "Fácil limpeza e alta durabilidade"],
+                image: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                id: 4,
+                name: "Persiana Romana",
+                category: "persianas",
+                categoryLabel: "Persianas",
+                selectValue: "Persiana Romana",
+                description: "Módulos estruturados que se recolhem em gomos elegantes, unindo o charme do tecido à praticidade das persianas.",
+                features: ["Disponível em linho, rústico e blackout", "Visual arquitetônico atemporal"],
+                image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                id: 5,
+                name: "Cortina Motorizada Inteligente",
+                category: "motorizadas",
+                categoryLabel: "Motorizadas",
+                selectValue: "Cortina ou Persiana Motorizada",
+                description: "Acionamento silencioso por controle remoto, aplicativo no celular ou comandos de voz (Alexa e Google Home).",
+                features: ["Ideal para pés-direitos duplos", "Integração com automação residencial"],
+                image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                id: 6,
+                name: "Carpete Residencial e Corporativo",
+                category: "carpetes",
+                categoryLabel: "Carpetes & Tapetes",
+                selectValue: "Carpete Residencial / Corporativo",
+                description: "Conforto acústico e térmico superior com carpetes em rolo ou placas modulares de alto tráfego e toque macio.",
+                features: ["Isolamento acústico e térmico", "Instalação especializada sem emendas aparentes"],
+                image: "https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&w=800&q=80"
+            }
+        ];
+
+        // Número oficial da loja para WhatsApp (DDD 17 - Votuporanga)
+        const WHATSAPP_NUMBER = "551734215619";
+
+        document.addEventListener("DOMContentLoaded", () => {
+            // Inicializar ícones Lucide
+            lucide.createIcons();
+
+            // Ano atual no rodapé
+            document.getElementById("current-year").textContent = new Date().getFullYear();
+
+            // Menu Mobile Toggle
+            const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+            const mobileMenu = document.getElementById("mobile-menu");
+            const mobileLinks = document.querySelectorAll(".mobile-link");
+
+            mobileMenuBtn.addEventListener("click", () => {
+                mobileMenu.classList.toggle("hidden");
+            });
+
+            mobileLinks.forEach(link => {
+                link.addEventListener("click", () => {
+                    mobileMenu.classList.add("hidden");
+                });
+            });
+
+            // =================================================================
+            // RENDERIZAÇÃO E FILTRO DO CATÁLOGO
+            // =================================================================
+            const catalogGrid = document.getElementById("catalog-grid");
+            const filterButtons = document.querySelectorAll(".filter-btn");
+
+            function renderProducts(filter = "todas") {
+                catalogGrid.innerHTML = "";
+                const filtered = filter === "todas" 
+                    ? products 
+                    : products.filter(item => item.category === filter);
+
+                filtered.forEach((product, index) => {
+                    const card = document.createElement("article");
+                    card.className = "animate-fade-up group bg-white rounded-3xl overflow-hidden border border-beige shadow-card hover:shadow-soft transition-all duration-300 flex flex-col justify-between";
+                    card.style.animationDelay = `${index * 60}ms`;
+
+                    card.innerHTML = `
+                        <div>
+                            <div class="relative aspect-[16/11] overflow-hidden bg-beige">
+                                <img 
+                                    src="${product.image}" 
+                                    alt="${product.name}" 
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    onerror="this.src='https://placehold.co/600x420/E8E0D5/2C241E?text=${encodeURIComponent(product.name)}'"
+                                >
+                                <span class="absolute top-3.5 left-3.5 bg-sand/95 backdrop-blur-sm text-espresso text-xs font-semibold px-3 py-1 rounded-full shadow-sm">
+                                    ${product.categoryLabel}
+                                </span>
+                            </div>
+
+                            <div class="p-6 sm:p-7 space-y-3">
+                                <h3 class="font-editorial text-2xl font-bold text-espresso group-hover:text-terracotta transition-colors">
+                                    ${product.name}
+                                </h3>
+                                <p class="text-sm text-espresso/75 leading-relaxed">
+                                    ${product.description}
+                                </p>
+                                <ul class="pt-2 space-y-1.5">
+                                    ${product.features.map(feat => `
+                                        <li class="flex items-center gap-2 text-xs text-espresso/80 font-medium">
+                                            <span class="w-1.5 h-1.5 rounded-full bg-terracotta"></span>
+                                            <span>${feat}</span>
+                                        </li>
+                                    `).join("")}
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="px-6 pb-6 sm:px-7 sm:pb-7 pt-2">
+                            <button 
+                                type="button" 
+                                onclick="selectProductForQuote('${product.selectValue}', '${product.name}')"
+                                class="w-full inline-flex items-center justify-center gap-2 bg-cream hover:bg-espresso text-espresso hover:text-sand border border-beige hover:border-espresso font-medium text-sm py-3.5 px-5 rounded-full transition-all duration-300">
+                                <span>Solicitar Orçamento deste Modelo</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    `;
+                    catalogGrid.appendChild(card);
+                });
+
+                lucide.createIcons();
+            }
+
+            // Inicializa catálogo completo
+            renderProducts("todas");
+
+            // Eventos nos botões de filtro
+            filterButtons.forEach(btn => {
+                btn.addEventListener("click", () => {
+                    // Atualiza visual dos botões
+                    filterButtons.forEach(b => {
+                        b.classList.remove("bg-espresso", "text-sand", "shadow-sm");
+                        b.classList.add("bg-cream", "text-espresso", "border", "border-beige");
+                    });
+                    btn.classList.remove("bg-cream", "text-espresso", "border", "border-beige");
+                    btn.classList.add("bg-espresso", "text-sand", "shadow-sm");
+
+                    const filterValue = btn.getAttribute("data-filter");
+                    renderProducts(filterValue);
+                });
+            });
+
+            // =================================================================
+            // SIMULADOR DE ORÇAMENTO RÁPIDO
+            // =================================================================
+            const produtoSelect = document.getElementById("produto");
+            const ambienteSelect = document.getElementById("ambiente");
+            const larguraInput = document.getElementById("largura");
+            const alturaInput = document.getElementById("altura");
+            const nomeInput = document.getElementById("cliente-nome");
+            const cidadeInput = document.getElementById("cliente-cidade");
+            const areaBadge = document.getElementById("area-badge");
+            const summaryText = document.getElementById("summary-text");
+            const prefillBanner = document.getElementById("prefill-banner");
+            const prefillName = document.getElementById("prefill-name");
+            const clearPrefillBtn = document.getElementById("clear-prefill");
+            const quoteForm = document.getElementById("quote-form");
+            const btnEstimativa = document.getElementById("btn-estimativa");
+            const quoteFeedback = document.getElementById("quote-feedback");
+            const feedbackDetails = document.getElementById("feedback-details");
+            const closeFeedback = document.getElementById("close-feedback");
+
+            // Função global chamada pelos cards do catálogo
+            window.selectProductForQuote = function(selectValue, displayName) {
+                produtoSelect.value = selectValue;
+                prefillName.textContent = displayName;
+                prefillBanner.classList.remove("hidden");
+                prefillBanner.classList.add("flex");
+                updateSimulationSummary();
+
+                // Rola suavemente até o simulador
+                const simulatorSection = document.getElementById("simulador");
+                simulatorSection.scrollIntoView({ behavior: "smooth", block: "start" });
+            };
+
+            clearPrefillBtn.addEventListener("click", () => {
+                prefillBanner.classList.add("hidden");
+                prefillBanner.classList.remove("flex");
+            });
+
+            function updateSimulationSummary() {
+                const prod = produtoSelect.value;
+                const amb = ambienteSelect.value;
+                const larg = parseFloat(larguraInput.value);
+                const alt = parseFloat(alturaInput.value);
+
+                if (!isNaN(larg) && !isNaN(alt) && larg > 0 && alt > 0) {
+                    const area = (larg * alt).toFixed(2);
+                    areaBadge.textContent = `Área estimada: ${area} m²`;
+                    summaryText.innerHTML = `Projeto sob medida de <strong>${prod}</strong> para <strong>${amb}</strong>, com medidas aproximadas de <strong>${larg.toFixed(2)}m (L) x ${alt.toFixed(2)}m (A)</strong>.`;
+                } else {
+                    areaBadge.textContent = "Área estimada: -- m²";
+                    summaryText.innerHTML = `Modelo escolhido: <strong>${prod}</strong> para <strong>${amb}</strong>. Informe largura e altura para calcular a área aproximada.`;
+                }
+            }
+
+            // Atualiza resumo em tempo real
+            [produtoSelect, ambienteSelect, larguraInput, alturaInput].forEach(el => {
+                el.addEventListener("input", updateSimulationSummary);
+                el.addEventListener("change", updateSimulationSummary);
+            });
+
+            // Botão "Ver Prévia" (Exibe feedback elegante sem alert)
+            btnEstimativa.addEventListener("click", () => {
+                const prod = produtoSelect.value;
+                const amb = ambienteSelect.value;
+                const larg = parseFloat(larguraInput.value) || 0;
+                const alt = parseFloat(alturaInput.value) || 0;
+                const area = (larg * alt).toFixed(2);
+
+                let msg = `Preparamos o pré-atendimento para <strong>${prod}</strong> (${amb}). `;
+                if (larg > 0 && alt > 0) {
+                    msg += `Com ${larg.toFixed(2)}m de largura por ${alt.toFixed(2)}m de altura (${area} m²), recomendamos agendar nossa visita técnica gratuita em Votuporanga para definição do tecido, trilho/bandô e valor final exato.`;
+                } else {
+                    msg += `Informe a largura e altura aproximadas para calcularmos a metragem do seu projeto.`;
+                }
+
+                feedbackDetails.innerHTML = msg;
+                quoteFeedback.classList.remove("hidden");
+            });
+
+            closeFeedback.addEventListener("click", () => {
+                quoteFeedback.classList.add("hidden");
+            });
+
+            // Envio do Formulário para o WhatsApp
+            quoteForm.addEventListener("submit", (e) => {
+                e.preventDefault();
+
+                const prod = produtoSelect.value;
+                const amb = ambienteSelect.value;
+                const larg = parseFloat(larguraInput.value).toFixed(2);
+                const alt = parseFloat(alturaInput.value).toFixed(2);
+                const area = (parseFloat(larg) * parseFloat(alt)).toFixed(2);
+                const nome = nomeInput.value.trim();
+                const cidade = cidadeInput.value.trim() || "Votuporanga - SP";
+
+                const saudacao = nome ? `Olá, equipe *Paraíso dos Carpetes*! Meu nome é *${nome}*.` : `Olá, equipe *Paraíso dos Carpetes*!`;
+
+                const mensagem = `${saudacao}
+Gostaria de solicitar um orçamento sob medida através do site:
+
+• *Produto:* ${prod}
+• *Ambiente:* ${amb}
+• *Medidas aproximadas:* ${larg}m (largura) x ${alt}m (altura) — aprox. ${area} m²
+• *Localidade:* ${cidade}
+
+Podem me ajudar com os valores e agendar uma medição técnica?`;
+
+                const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mensagem)}`;
+                
+                // Mostra confirmação visual no formulário e abre WhatsApp
+                feedbackDetails.innerHTML = `Sua solicitação foi gerada! Redirecionando para o WhatsApp oficial da <strong>Paraíso dos Carpetes</strong>...`;
+                quoteFeedback.classList.remove("hidden");
+
+                window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+            });
+        });
+    </script>
+</body>
+</html>
